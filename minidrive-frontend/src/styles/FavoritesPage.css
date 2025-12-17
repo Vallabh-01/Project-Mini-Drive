@@ -1,0 +1,84 @@
+/* Align with DashboardLayout.css tokens */
+.fav-wrap { background: transparent; } /* same as other pages */ /* uses var(--shadow), etc. */
+.page-title { margin: 0 0 18px; font-size: 28px; font-weight: 800; color: #1e2a3a; }
+
+/* Cards row identical to SharedFilesPage */
+.fav-cards-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.fav-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 120px;
+}
+
+.tile-avatars { display: flex; gap: 6px; margin-bottom: 2px; }
+.ava {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #dde6ff; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+.tile-title { font-weight: 800; color: #223147; }
+.tile-sub { color: var(--muted); font-size: 13px; }
+.tile-underline { height: 4px; width: 64px; border-radius: 4px; margin-top: 6px; }
+.u-blue { background: #4f7df5; }
+.u-pink { background: #f28cab; }
+.u-purple { background: #7b6cf6; }
+.u-teal { background: #20bfa9; }
+
+.fav-add {
+  border: none; background: #fff; border-radius: 16px;
+  color: #2f6af2; font-size: 28px; font-weight: 700; box-shadow: var(--shadow); cursor: pointer;
+}
+
+/* Recent list */
+.fav-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+
+.fav-row {
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 120px 120px 80px 36px 36px;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.fav-left { display: flex; align-items: center; gap: 10px; }
+.fav-dot {
+  width: 42px; height: 42px; border-radius: 14px;
+  background: #eaf0ff; display: grid; place-items: center; color: #4f7df5; font-size: 18px; font-weight: 800;
+}
+.fav-dot.pink { background: #ffd7e3; color: #e0618b; }
+.fav-dot.purple { background: #e7e3ff; color: #7b6cf6; }
+
+.fav-name { font-weight: 700; color: #253247; }
+
+.fav-owner { display: flex; justify-content: center; gap: 6px; }
+.mini-ava {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #ccd9ff; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.06);
+}
+
+.fav-meta { color: var(--muted); font-size: 14px; text-align: center; }
+
+.fav-action {
+  height: 32px; width: 32px; border: none; background: #eef3ff; color: #4f6aa3;
+  border-radius: 10px; cursor: pointer;
+}
+
+/* Responsive matches other pages */
+@media (max-width: 1100px) {
+  .fav-cards-row { grid-template-columns: repeat(3, 1fr); }
+  .fav-row { grid-template-columns: 1fr 90px 90px 70px 32px 32px; }
+}
+@media (max-width: 820px) { .fav-cards-row { grid-template-columns: repeat(2, 1fr); } }

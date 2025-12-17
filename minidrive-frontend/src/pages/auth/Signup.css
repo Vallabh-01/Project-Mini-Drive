@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Unbounded:wght@200..900&display=swap');
+/* General Layout */
+.signup-container {
+  height: 100vh; /* prevent extra scrolling */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 40px; 
+}
+
+/* Circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5px); /* softer glow */
+  opacity: 4;
+}
+.circle-1 {
+  top: 0px;
+  left: 50%; /* moved slightly left */
+  width: 260px;
+  height: 260px;
+  background: linear-gradient(135deg, #190061 0%, #0A1B30 100%);
+}
+.circle-2 {
+  bottom: 60px;
+  left: 82%; /* adjusted slightly */
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(135deg, #190061 0%, #0A1B30 100%);
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  z-index: 2;
+}
+.headline {
+  font-size: 65px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 450;
+  /* font-style: italic; */
+  margin-bottom: 20px;
+}
+.tagline {
+  border: 2px solid white;
+  display: inline-block;
+  padding: 8px 18px;
+  font-family: "Unbounded", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Signup Card (Glass effect) */
+.signup-card {
+  background: rgba(255, 255, 255, 0.05); /* lighter, more transparent */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px); /* minimal blur */
+  border-radius: 18px;
+  padding: 0px 30px 30px 30px;
+  width: 100%;
+  max-width: 380px; /* reduced width */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+.signup-card h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+  font-family: "Didact Gothic", sans-serif;
+  font-weight: 400;
+}
+.signup-card .subtitle {
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.signup-card input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-family: "Unbounded", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: bold;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+.signup-card input::placeholder {
+  color: #999;
+}
+
+/* Button */
+.signup-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(to right, #2E4CEE 0%, #221EBF 53%, #040F75 100%);
+  color: white;
+  font-size: 15px;
+   font-family: "Didact Gothic", sans-serif;
+   letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* .signup-card button:hover {
+  background: linear-gradient(90deg, #22007d, #102542);
+} */
+
+/* Footer Links */
+.footer-links {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 13px;
+  color: #bbb;
+}
+.footer-links a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #80cfff;
+}
+.footer-links .links {
+  margin-top: 6px;
+  font-size: 12px;
+}

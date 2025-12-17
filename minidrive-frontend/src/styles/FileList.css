@@ -1,0 +1,22 @@
+.filelist{margin-top:6px}
+.cards-files{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap:16px;
+}
+.file-card{
+  background:#fff;border-radius:16px;padding:14px;box-shadow:0 8px 24px rgba(18,34,64,.08)
+}
+.file-row{display:flex;align-items:center;justify-content:space-between}
+.file-left{display:flex;align-items:center;gap:12px}
+.file-blob{font-size:22px}
+.file-name{font-weight:700;color:#223147}
+.file-more{height:32px;width:32px;border:none;background:#eef3ff;border-radius:10px;color:#4f6aa3;cursor:pointer}
+.file-meta{display:flex;gap:10px;align-items:center;margin-top:10px;color:#6f7f98;font-size:13px}
+.pill{padding:4px 8px;border-radius:999px;font-weight:600}
+.pill.green{background:#e7fff3;color:#1f9e63}
+.pill.gray{background:#eff3f8;color:#5e6d83}
+
+
+.file-actions{display:flex; gap:6px}
+.file-actions button{height:32px;width:32px;border:none;background:#eef3ff;border-radius:10px;color:#4f6aa3;cursor:pointer}
