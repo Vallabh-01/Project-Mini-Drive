@@ -1,0 +1,128 @@
+/* From Uiverse.io by Javierrocadev */ 
+.card {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  background: rgba(63, 75, 105, 0.635);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  border-radius: 50%;
+  border: 35px solid rgba(242, 242, 245, 0.217);
+  transition: all .9s ease;
+  filter: blur(.7rem);
+}
+
+.text {
+  flex-grow: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-size: .6em;
+  font-weight: 300;
+  color: rgba(240, 248, 255, 0.691);
+}
+
+.icons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
+.btn {
+  border: none;
+  width: 84px;
+  height: 35px;
+  background-color: rgba(247, 234, 234, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  stroke: rgb(38, 59, 126);
+}
+
+.btn:hover {
+  background-color: rgb(247, 234, 234);
+}
+
+.card:hover::before {
+  width: 140px;
+  height: 140px;
+  top: -30%;
+  left: 50%;
+  filter: blur(0rem);
+}
+
+
+/* New styling for modern grid design */
+.file-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.file-icon {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
+}
+
+.file-info-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.file-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: aliceblue;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+}
+
+.file-meta {
+  font-size: 0.75rem;
+  color: rgba(240, 248, 255, 0.7);
+  margin-top: 4px;
+}
+
+.file-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 0 0 15px 15px;
+}

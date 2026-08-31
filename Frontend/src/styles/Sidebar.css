@@ -1,0 +1,92 @@
+.sidebar {
+  width: 240px;
+  background: #0b2c73;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 18px;
+}
+
+.side-bottom {
+  margin-top: auto;
+  margin-bottom: 32px; /* increased space at the bottom */
+  padding-top: 24px;   /* space above the logout button */
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.nav-item a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.nav-item a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-item a.active {
+  background: #163b8f;
+}
+
+.side-bottom {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.side-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-btn {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.login-btn {
+  background: #163b8f;
+}
+
+.signup-btn {
+  background: #1e4ed8;
+}
+
+.auth-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
